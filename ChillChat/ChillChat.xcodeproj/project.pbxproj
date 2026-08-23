@@ -11,6 +11,13 @@
 		919B4928303AE9AC008E9B5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B4924303AE9AC008E9B5A /* ContentView.swift */; };
 		919B4929303AE9AC008E9B5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 919B4922303AE9AC008E9B5A /* Assets.xcassets */; };
 		919B492C303AEA9F008E9B5A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 919B492B303AEA9F008E9B5A /* GoogleService-Info.plist */; };
+		919B492F303AECDD008E9B5A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 919B492E303AECDD008E9B5A /* FirebaseAuth */; };
+		919B4931303AECDD008E9B5A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 919B4930303AECDD008E9B5A /* FirebaseFirestore */; };
+		919B4933303AECDD008E9B5A /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 919B4932303AECDD008E9B5A /* FirebaseMessaging */; };
+		919B4935303AED7E008E9B5A /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B4934303AED7E008E9B5A /* MessageModel.swift */; };
+		919B4937303AEE4E008E9B5A /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B4936303AEE4E008E9B5A /* AuthViewModel.swift */; };
+		919B4939303AF7BC008E9B5A /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B4938303AF7BC008E9B5A /* ChatViewModel.swift */; };
+		919B493B303B0051008E9B5A /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B493A303B0051008E9B5A /* MessageBubble.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,10 @@
 		919B4923303AE9AC008E9B5A /* ChillChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChillChatApp.swift; sourceTree = "<group>"; };
 		919B4924303AE9AC008E9B5A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		919B492B303AEA9F008E9B5A /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		919B4934303AED7E008E9B5A /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
+		919B4936303AEE4E008E9B5A /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		919B4938303AF7BC008E9B5A /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		919B493A303B0051008E9B5A /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +37,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				919B4933303AECDD008E9B5A /* FirebaseMessaging in Frameworks */,
+				919B492F303AECDD008E9B5A /* FirebaseAuth in Frameworks */,
+				919B4931303AECDD008E9B5A /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +67,11 @@
 			children = (
 				919B4922303AE9AC008E9B5A /* Assets.xcassets */,
 				919B4923303AE9AC008E9B5A /* ChillChatApp.swift */,
+				919B4934303AED7E008E9B5A /* MessageModel.swift */,
+				919B4936303AEE4E008E9B5A /* AuthViewModel.swift */,
+				919B4938303AF7BC008E9B5A /* ChatViewModel.swift */,
 				919B4924303AE9AC008E9B5A /* ContentView.swift */,
+				919B493A303B0051008E9B5A /* MessageBubble.swift */,
 				919B492B303AEA9F008E9B5A /* GoogleService-Info.plist */,
 			);
 			path = ChillChat;
@@ -76,6 +94,9 @@
 			);
 			name = ChillChat;
 			packageProductDependencies = (
+				919B492E303AECDD008E9B5A /* FirebaseAuth */,
+				919B4930303AECDD008E9B5A /* FirebaseFirestore */,
+				919B4932303AECDD008E9B5A /* FirebaseMessaging */,
 			);
 			productName = ChillChat;
 			productReference = 919B4912303AE68A008E9B5A /* ChillChat.app */;
@@ -105,6 +126,9 @@
 			);
 			mainGroup = 919B4909303AE68A008E9B5A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				919B492D303AECDD008E9B5A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 919B4913303AE68A008E9B5A /* Products */;
 			projectDirPath = "";
@@ -132,8 +156,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				919B4937303AEE4E008E9B5A /* AuthViewModel.swift in Sources */,
 				919B4927303AE9AC008E9B5A /* ChillChatApp.swift in Sources */,
+				919B4935303AED7E008E9B5A /* MessageModel.swift in Sources */,
+				919B4939303AF7BC008E9B5A /* ChatViewModel.swift in Sources */,
 				919B4928303AE9AC008E9B5A /* ContentView.swift in Sources */,
+				919B493B303B0051008E9B5A /* MessageBubble.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +375,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		919B492D303AECDD008E9B5A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.18.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		919B492E303AECDD008E9B5A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 919B492D303AECDD008E9B5A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		919B4930303AECDD008E9B5A /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 919B492D303AECDD008E9B5A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		919B4932303AECDD008E9B5A /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 919B492D303AECDD008E9B5A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 919B490A303AE68A008E9B5A /* Project object */;
 }
