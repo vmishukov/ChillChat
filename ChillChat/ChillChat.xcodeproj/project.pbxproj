@@ -10,7 +10,7 @@
 		919B4927303AE9AC008E9B5A /* ChillChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B4923303AE9AC008E9B5A /* ChillChatApp.swift */; };
 		919B4928303AE9AC008E9B5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B4924303AE9AC008E9B5A /* ContentView.swift */; };
 		919B4929303AE9AC008E9B5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 919B4922303AE9AC008E9B5A /* Assets.xcassets */; };
-		919B492A303AE9AC008E9B5A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 919B4925303AE9AC008E9B5A /* GoogleService-Info.plist */; };
+		919B492C303AEA9F008E9B5A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 919B492B303AEA9F008E9B5A /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,7 +18,7 @@
 		919B4922303AE9AC008E9B5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		919B4923303AE9AC008E9B5A /* ChillChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChillChatApp.swift; sourceTree = "<group>"; };
 		919B4924303AE9AC008E9B5A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		919B4925303AE9AC008E9B5A /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		919B492B303AEA9F008E9B5A /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 				919B4922303AE9AC008E9B5A /* Assets.xcassets */,
 				919B4923303AE9AC008E9B5A /* ChillChatApp.swift */,
 				919B4924303AE9AC008E9B5A /* ContentView.swift */,
-				919B4925303AE9AC008E9B5A /* GoogleService-Info.plist */,
+				919B492B303AEA9F008E9B5A /* GoogleService-Info.plist */,
 			);
 			path = ChillChat;
 			sourceTree = "<group>";
@@ -121,7 +121,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				919B4929303AE9AC008E9B5A /* Assets.xcassets in Resources */,
-				919B492A303AE9AC008E9B5A /* GoogleService-Info.plist in Resources */,
+				919B492C303AEA9F008E9B5A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
