@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ChatView: View {
     
     @StateObject private var authVM = AuthViewModel()
     @StateObject private var chatVM = ChatViewModel()
@@ -23,7 +23,7 @@ struct ContentView: View {
                     }
                 }
             }
-            
+                
             HStack {
                 TextField("Message...",
                           text: $messageText)
@@ -52,5 +52,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    ChatView()
 }

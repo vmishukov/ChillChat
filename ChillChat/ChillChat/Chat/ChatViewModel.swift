@@ -15,9 +15,7 @@ final class ChatViewModel: ObservableObject {
     private let db = Firestore.firestore()
     private var listener: ListenerRegistration?
     
-    init() {
-        
-    }
+    init() { }
     
     func sendMessage(text: String, senderID: String) {
         db.collection("messages").addDocument(data: [
