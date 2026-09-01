@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		919B4927303AE9AC008E9B5A /* ChillChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B4923303AE9AC008E9B5A /* ChillChatApp.swift */; };
-		919B4928303AE9AC008E9B5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B4924303AE9AC008E9B5A /* ContentView.swift */; };
+		919B4928303AE9AC008E9B5A /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B4924303AE9AC008E9B5A /* ChatView.swift */; };
 		919B4929303AE9AC008E9B5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 919B4922303AE9AC008E9B5A /* Assets.xcassets */; };
 		919B492C303AEA9F008E9B5A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 919B492B303AEA9F008E9B5A /* GoogleService-Info.plist */; };
 		919B492F303AECDD008E9B5A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 919B492E303AECDD008E9B5A /* FirebaseAuth */; };
@@ -18,18 +18,29 @@
 		919B4937303AEE4E008E9B5A /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B4936303AEE4E008E9B5A /* AuthViewModel.swift */; };
 		919B4939303AF7BC008E9B5A /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B4938303AF7BC008E9B5A /* ChatViewModel.swift */; };
 		919B493B303B0051008E9B5A /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B493A303B0051008E9B5A /* MessageBubble.swift */; };
+		919B49403045880F008E9B5A /* FakeSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B493F3045880F008E9B5A /* FakeSplashView.swift */; };
+		919B494230458E91008E9B5A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B494130458E91008E9B5A /* Extensions.swift */; };
+		919B494430458F9A008E9B5A /* FakeSplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B494330458F9A008E9B5A /* FakeSplashViewModel.swift */; };
+		919B494830469DC2008E9B5A /* Sora-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 919B494730469DC2008E9B5A /* Sora-VariableFont_wght.ttf */; };
+		919B494B30469F12008E9B5A /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B494A30469F12008E9B5A /* Fonts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		919B4912303AE68A008E9B5A /* ChillChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChillChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		919B4922303AE9AC008E9B5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		919B4923303AE9AC008E9B5A /* ChillChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChillChatApp.swift; sourceTree = "<group>"; };
-		919B4924303AE9AC008E9B5A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		919B4924303AE9AC008E9B5A /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		919B492B303AEA9F008E9B5A /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		919B4934303AED7E008E9B5A /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
 		919B4936303AEE4E008E9B5A /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		919B4938303AF7BC008E9B5A /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		919B493A303B0051008E9B5A /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
+		919B493F3045880F008E9B5A /* FakeSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeSplashView.swift; sourceTree = "<group>"; };
+		919B494130458E91008E9B5A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		919B494330458F9A008E9B5A /* FakeSplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeSplashViewModel.swift; sourceTree = "<group>"; };
+		919B494730469DC2008E9B5A /* Sora-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		919B494930469E71008E9B5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		919B494A30469F12008E9B5A /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,16 +76,62 @@
 		919B4926303AE9AC008E9B5A /* ChillChat */ = {
 			isa = PBXGroup;
 			children = (
-				919B4922303AE9AC008E9B5A /* Assets.xcassets */,
-				919B4923303AE9AC008E9B5A /* ChillChatApp.swift */,
+				919B494930469E71008E9B5A /* Info.plist */,
 				919B4934303AED7E008E9B5A /* MessageModel.swift */,
-				919B4936303AEE4E008E9B5A /* AuthViewModel.swift */,
-				919B4938303AF7BC008E9B5A /* ChatViewModel.swift */,
-				919B4924303AE9AC008E9B5A /* ContentView.swift */,
-				919B493A303B0051008E9B5A /* MessageBubble.swift */,
+				919B493E30457B82008E9B5A /* Auth */,
+				919B493D30457B66008E9B5A /* FakeSplash */,
+				919B493C30457A2D008E9B5A /* Chat */,
+				919B4922303AE9AC008E9B5A /* Assets.xcassets */,
+				919B494530469DAF008E9B5A /* Resources */,
+				919B4923303AE9AC008E9B5A /* ChillChatApp.swift */,
+				919B494130458E91008E9B5A /* Extensions.swift */,
 				919B492B303AEA9F008E9B5A /* GoogleService-Info.plist */,
 			);
 			path = ChillChat;
+			sourceTree = "<group>";
+		};
+		919B493C30457A2D008E9B5A /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				919B4938303AF7BC008E9B5A /* ChatViewModel.swift */,
+				919B4924303AE9AC008E9B5A /* ChatView.swift */,
+				919B493A303B0051008E9B5A /* MessageBubble.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		919B493D30457B66008E9B5A /* FakeSplash */ = {
+			isa = PBXGroup;
+			children = (
+				919B493F3045880F008E9B5A /* FakeSplashView.swift */,
+				919B494330458F9A008E9B5A /* FakeSplashViewModel.swift */,
+			);
+			path = FakeSplash;
+			sourceTree = "<group>";
+		};
+		919B493E30457B82008E9B5A /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				919B4936303AEE4E008E9B5A /* AuthViewModel.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		919B494530469DAF008E9B5A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				919B494630469DBF008E9B5A /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		919B494630469DBF008E9B5A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				919B494730469DC2008E9B5A /* Sora-VariableFont_wght.ttf */,
+				919B494A30469F12008E9B5A /* Fonts.swift */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +203,7 @@
 			files = (
 				919B4929303AE9AC008E9B5A /* Assets.xcassets in Resources */,
 				919B492C303AEA9F008E9B5A /* GoogleService-Info.plist in Resources */,
+				919B494830469DC2008E9B5A /* Sora-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,9 +217,13 @@
 				919B4937303AEE4E008E9B5A /* AuthViewModel.swift in Sources */,
 				919B4927303AE9AC008E9B5A /* ChillChatApp.swift in Sources */,
 				919B4935303AED7E008E9B5A /* MessageModel.swift in Sources */,
+				919B494230458E91008E9B5A /* Extensions.swift in Sources */,
 				919B4939303AF7BC008E9B5A /* ChatViewModel.swift in Sources */,
-				919B4928303AE9AC008E9B5A /* ContentView.swift in Sources */,
+				919B49403045880F008E9B5A /* FakeSplashView.swift in Sources */,
+				919B494B30469F12008E9B5A /* Fonts.swift in Sources */,
+				919B4928303AE9AC008E9B5A /* ChatView.swift in Sources */,
 				919B493B303B0051008E9B5A /* MessageBubble.swift in Sources */,
+				919B494430458F9A008E9B5A /* FakeSplashViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +361,7 @@
 				DEVELOPMENT_TEAM = FV5M76HD5M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChillChat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -331,6 +394,7 @@
 				DEVELOPMENT_TEAM = FV5M76HD5M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChillChat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
