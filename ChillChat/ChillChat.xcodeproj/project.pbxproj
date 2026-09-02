@@ -25,6 +25,10 @@
 		919B494B30469F12008E9B5A /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B494A30469F12008E9B5A /* Fonts.swift */; };
 		919B49503046AB23008E9B5A /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B494F3046AB23008E9B5A /* RegistrationViewModel.swift */; };
 		919B49523046AB54008E9B5A /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B49513046AB54008E9B5A /* RegistrationView.swift */; };
+		919B495530481C7E008E9B5A /* ChatMainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B495430481C7E008E9B5A /* ChatMainTabView.swift */; };
+		919B495930482025008E9B5A /* DatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B495830482025008E9B5A /* DatingView.swift */; };
+		919B495B304820B8008E9B5A /* ProfileVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B495A304820B8008E9B5A /* ProfileVIew.swift */; };
+		919B495D30482340008E9B5A /* AppStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B495C30482340008E9B5A /* AppStateManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +49,10 @@
 		919B494A30469F12008E9B5A /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		919B494F3046AB23008E9B5A /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		919B49513046AB54008E9B5A /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		919B495430481C7E008E9B5A /* ChatMainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMainTabView.swift; sourceTree = "<group>"; };
+		919B495830482025008E9B5A /* DatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatingView.swift; sourceTree = "<group>"; };
+		919B495A304820B8008E9B5A /* ProfileVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVIew.swift; sourceTree = "<group>"; };
+		919B495C30482340008E9B5A /* AppStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +90,14 @@
 			children = (
 				919B494930469E71008E9B5A /* Info.plist */,
 				919B4934303AED7E008E9B5A /* MessageModel.swift */,
+				919B495C30482340008E9B5A /* AppStateManager.swift */,
+				919B495330481B4D008E9B5A /* ChatMainTab */,
 				919B494C3046AB00008E9B5A /* Registration */,
 				919B493E30457B82008E9B5A /* Auth */,
 				919B493D30457B66008E9B5A /* FakeSplash */,
 				919B493C30457A2D008E9B5A /* Chat */,
+				919B495630481FBA008E9B5A /* Dating */,
+				919B495730481FD7008E9B5A /* Profile */,
 				919B4922303AE9AC008E9B5A /* Assets.xcassets */,
 				919B494530469DAF008E9B5A /* Resources */,
 				919B4923303AE9AC008E9B5A /* ChillChatApp.swift */,
@@ -146,6 +158,30 @@
 				919B49513046AB54008E9B5A /* RegistrationView.swift */,
 			);
 			path = Registration;
+			sourceTree = "<group>";
+		};
+		919B495330481B4D008E9B5A /* ChatMainTab */ = {
+			isa = PBXGroup;
+			children = (
+				919B495430481C7E008E9B5A /* ChatMainTabView.swift */,
+			);
+			path = ChatMainTab;
+			sourceTree = "<group>";
+		};
+		919B495630481FBA008E9B5A /* Dating */ = {
+			isa = PBXGroup;
+			children = (
+				919B495830482025008E9B5A /* DatingView.swift */,
+			);
+			path = Dating;
+			sourceTree = "<group>";
+		};
+		919B495730481FD7008E9B5A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				919B495A304820B8008E9B5A /* ProfileVIew.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,11 +269,15 @@
 				919B4927303AE9AC008E9B5A /* ChillChatApp.swift in Sources */,
 				919B49523046AB54008E9B5A /* RegistrationView.swift in Sources */,
 				919B4935303AED7E008E9B5A /* MessageModel.swift in Sources */,
+				919B495B304820B8008E9B5A /* ProfileVIew.swift in Sources */,
 				919B494230458E91008E9B5A /* Extensions.swift in Sources */,
 				919B4939303AF7BC008E9B5A /* ChatViewModel.swift in Sources */,
 				919B49403045880F008E9B5A /* FakeSplashView.swift in Sources */,
 				919B494B30469F12008E9B5A /* Fonts.swift in Sources */,
+				919B495930482025008E9B5A /* DatingView.swift in Sources */,
 				919B4928303AE9AC008E9B5A /* ChatView.swift in Sources */,
+				919B495530481C7E008E9B5A /* ChatMainTabView.swift in Sources */,
+				919B495D30482340008E9B5A /* AppStateManager.swift in Sources */,
 				919B493B303B0051008E9B5A /* MessageBubble.swift in Sources */,
 				919B494430458F9A008E9B5A /* FakeSplashViewModel.swift in Sources */,
 			);
@@ -383,6 +423,8 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -416,6 +458,8 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

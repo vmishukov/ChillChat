@@ -10,6 +10,7 @@ import SwiftUI
 struct RegistrationView: View {
     
     @StateObject var viewModel = RegistrationViewModel()
+    @Environment(AppStateManager.self) var appStateManager
     
     var body: some View {
         GeometryReader { geometry in
@@ -26,8 +27,24 @@ struct RegistrationView: View {
                         .font(.custom(Fonts.soraLight.rawValue, size: 16))
                         .multilineTextAlignment(.center)
                         .foregroundStyle(Color(hex: "#f6b092", opacity: 0.9))
-                        .padding(.bottom)
-                    
+                    HStack {
+                        Text("already have an account?")
+                            .font(.custom(Fonts.soraLight.rawValue, size: 14))
+                            .multilineTextAlignment(.center)
+                            .foregroundStyle(Color(hex: "#f6b092", opacity: 0.9))
+                            .padding(.bottom)
+                        Button {
+                            
+                        } label: {
+                            Text("sign in!")
+                                .underline()
+                                .font(.custom(Fonts.soraSemiBold.rawValue, size: 14))
+                                .multilineTextAlignment(.center)
+                                .foregroundStyle(Color(hex: "#f6a192", opacity: 1))
+                                .padding(.bottom)
+                        }
+                    }
+                    .padding(.bottom)
                     HStack(spacing: 10) {
                         VStack(alignment: .leading, spacing: 2) {
                             textFieldSubtext(text: "NAME")
@@ -58,7 +75,7 @@ struct RegistrationView: View {
                     }
                     
                     Button {
-                        
+                        appStateManager.currentState = .mainApp
                     } label: {
                         Text("Create an account")
                             .foregroundStyle(.black.opacity(0.8))
@@ -73,6 +90,7 @@ struct RegistrationView: View {
                             .shadow(color: Color(hex: "#f6b092"), radius: 9)
                     }
                     .buttonStyle(.plain)
+                    .padding(.top)
                     
                     HStack(alignment: .center) {
                         registrationLine
@@ -82,6 +100,7 @@ struct RegistrationView: View {
                             .foregroundStyle(Color(hex: "#f6b092", opacity: 0.9))
                         registrationLine
                     }
+                    .padding(.vertical)
                     VStack {
                         registrationContinueWithButton(method: .apple) {
                             
@@ -91,22 +110,6 @@ struct RegistrationView: View {
                         }
                     }
                     Spacer()
-                    HStack {
-                        Text("already have an account?")
-                            .font(.custom(Fonts.soraLight.rawValue, size: 14))
-                            .multilineTextAlignment(.center)
-                            .foregroundStyle(Color(hex: "#f6cf92", opacity: 0.9))
-                            .padding(.bottom)
-                        Button {
-                            
-                        } label: {
-                            Text("sign in!")
-                                .font(.custom(Fonts.soraSemiBold.rawValue, size: 14))
-                                .multilineTextAlignment(.center)
-                                .foregroundStyle(Color(hex: "#f6a192", opacity: 1))
-                                .padding(.bottom)
-                        }
-                    }
                 }
                 .padding(.horizontal)
                 .frame(minHeight: geometry.size.height)
