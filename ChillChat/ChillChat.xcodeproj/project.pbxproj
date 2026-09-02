@@ -23,6 +23,8 @@
 		919B494430458F9A008E9B5A /* FakeSplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B494330458F9A008E9B5A /* FakeSplashViewModel.swift */; };
 		919B494830469DC2008E9B5A /* Sora-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 919B494730469DC2008E9B5A /* Sora-VariableFont_wght.ttf */; };
 		919B494B30469F12008E9B5A /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B494A30469F12008E9B5A /* Fonts.swift */; };
+		919B49503046AB23008E9B5A /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B494F3046AB23008E9B5A /* RegistrationViewModel.swift */; };
+		919B49523046AB54008E9B5A /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B49513046AB54008E9B5A /* RegistrationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		919B494730469DC2008E9B5A /* Sora-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		919B494930469E71008E9B5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		919B494A30469F12008E9B5A /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		919B494F3046AB23008E9B5A /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		919B49513046AB54008E9B5A /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 			children = (
 				919B494930469E71008E9B5A /* Info.plist */,
 				919B4934303AED7E008E9B5A /* MessageModel.swift */,
+				919B494C3046AB00008E9B5A /* Registration */,
 				919B493E30457B82008E9B5A /* Auth */,
 				919B493D30457B66008E9B5A /* FakeSplash */,
 				919B493C30457A2D008E9B5A /* Chat */,
@@ -132,6 +137,15 @@
 				919B494A30469F12008E9B5A /* Fonts.swift */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		919B494C3046AB00008E9B5A /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				919B494F3046AB23008E9B5A /* RegistrationViewModel.swift */,
+				919B49513046AB54008E9B5A /* RegistrationView.swift */,
+			);
+			path = Registration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,8 +228,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				919B49503046AB23008E9B5A /* RegistrationViewModel.swift in Sources */,
 				919B4937303AEE4E008E9B5A /* AuthViewModel.swift in Sources */,
 				919B4927303AE9AC008E9B5A /* ChillChatApp.swift in Sources */,
+				919B49523046AB54008E9B5A /* RegistrationView.swift in Sources */,
 				919B4935303AED7E008E9B5A /* MessageModel.swift in Sources */,
 				919B494230458E91008E9B5A /* Extensions.swift in Sources */,
 				919B4939303AF7BC008E9B5A /* ChatViewModel.swift in Sources */,
