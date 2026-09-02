@@ -8,7 +8,7 @@
 import Foundation
 
 enum Fonts: String {
-    case soraThin = "Sora-Thin"
+    case soraThin = "Sora-Regular_Thin"
     case soraExtraLight = "Sora-Regular_ExtraLight"
     case soraLight = "Sora-Regular_Light"
     case soraRegular = "Sora-Regular"

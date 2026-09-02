@@ -24,7 +24,7 @@ struct ChillChatApp: App {
   var body: some Scene {
     WindowGroup {
       NavigationView {
-        ChatView()
+          RegistrationView()
       }
     }
   }
